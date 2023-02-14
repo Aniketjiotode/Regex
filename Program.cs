@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace Regex
+namespace Regex_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+          pattern p = new pattern();
+            p.patterncheck();
         }
     }
 }
