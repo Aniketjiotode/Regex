@@ -8,13 +8,14 @@ namespace Regex_
     internal class pattern
     {
         public static string name = "^[A-Z][a-z]{2,9}$";
+        public static string Lastname = "^[A-Z][a-z]{2,9}$";
          
         public void patterncheck()
         {
-            Regex regex= new Regex(name);
+            Regex regex= new Regex(Lastname);
             Console.WriteLine("Enter the name:");
-            string Name=Console.ReadLine();
-            Console.WriteLine(regex.IsMatch(Name));    
+            string LName=Console.ReadLine();
+            Console.WriteLine(regex.IsMatch(LName));    
         }
     }
 }
